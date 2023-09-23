@@ -1,0 +1,23 @@
+**Student:** BOINGIU Keren Ioana
+
+**Grupa:** 312 CB
+
+# Tema 2 SD: ThreadPoolExecutor
+## Descriere rezolvare
+Pe baza listei duble înlănțuite generice am implementat structuri de stivă și coadă, 
+cu funcțiile specifice (push, pop, front). Folosind aceste funcții am scris și niște 
+o funcție ajutătoare cu care pot insera în coadă elemente ordonate după anumite criterii, 
+una care permite afișarea cozii primind ca argument funcția de afișare element, funcție c
+are îmi caută prin coadă și îmi returnează dacă există un anumit element pe baza funcției 
+comparator date ca argument, o funcție care eliberează coada precum și datele interne 
+primind ca argument o funcție de eliberare element și funcții asemănătoare pentru stivă.
+ Aceste funcții ajutătoare au fost implementate fără a parcurge direct lista, ci cu ajutorul 
+ unei cozi, respectiv stive, auxiliare și utilizând funcțiile de push și pop.
+
+Cu ajutorul acestor structuri de date, am definit cozile de task-uri și stiva de thread-uri 
+libere, toate înglobate într-o structură de tip TPE (ThreadPoolExecutor) care memorează toate
+ datele aferente problemei. Utilizând funcțiile de la cozi și stive, precum și funcțiile 
+ ajutătoare definite, am implementat funcțiile problemei (pentru adăugarea de task-uri, găsirea 
+ task-urilor și thread-urilor, afișarea cozilor, planificarea și rularea task-urilor conform 
+ cerinței problemei) precum și funcții suplimentare (cum ar fi comparatoarele pentru adăugări
+  sau pentru găsirea elementelor).
